@@ -15,4 +15,4 @@ mlflow_venv/
 
 # Secrets
 .env
-EOF
+EOFdata/raw/*.csv
