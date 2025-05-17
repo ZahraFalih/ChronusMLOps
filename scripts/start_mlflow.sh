@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 # 1 – Load .env if it exists
