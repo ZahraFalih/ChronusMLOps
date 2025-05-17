@@ -1,0 +1,95 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.21.3
+model_size_bytes: 10971
+model_uuid: 61160cabbdf04318979d6a11dab64bab
+prompts: null
+run_id: f3cdcc7007d04715b51b923cddfaa49a
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Bedrooms", "required": true}, {"type": "double",
+    "name": "bathrooms", "required": true}, {"type": "double", "name": "sqmt_living",
+    "required": true}, {"type": "double", "name": "year_built", "required": true},
+    {"type": "double", "name": "floor_apartment", "required": true}, {"type": "boolean",
+    "name": "listing_date_2023-11-21", "required": true}, {"type": "boolean", "name":
+    "listing_date_2023-12-21", "required": true}, {"type": "boolean", "name": "listing_date_2024-01-15",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-04-26", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-05-05", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-06-03", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-06-04", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-06-08", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-06-12", "required": true}, {"type": "boolean", "name": "listing_date_2024-06-14",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-06-21", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-06-24", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-06-25", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-06-26", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-06-27", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-06-28", "required": true}, {"type": "boolean", "name": "listing_date_2024-07-02",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-07-05", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-07-06", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-07-08", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-07-09", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-07-11", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-07-12", "required": true}, {"type": "boolean", "name": "listing_date_2024-07-13",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-07-14", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-07-16", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-07-17", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-07-18", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-07-19", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-07-20", "required": true}, {"type": "boolean", "name": "listing_date_2024-07-21",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-07-22", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-07-25", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-07-26", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-07-27", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-07-28", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-07-29", "required": true}, {"type": "boolean", "name": "listing_date_2024-07-31",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-08-01", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-08-02", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-08-08", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-08-14", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-08-15", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-08-17", "required": true}, {"type": "boolean", "name": "listing_date_2024-08-18",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-08-19", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-08-20", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-08-21", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-08-22", "required": true}, {"type": "boolean",
+    "name": "listing_date_2024-08-23", "required": true}, {"type": "boolean", "name":
+    "listing_date_2024-08-28", "required": true}, {"type": "boolean", "name": "listing_date_2024-08-29",
+    "required": true}, {"type": "boolean", "name": "listing_date_2024-09-01", "required":
+    true}, {"type": "boolean", "name": "listing_date_2024-09-05", "required": true},
+    {"type": "boolean", "name": "listing_date_2024-09-09", "required": true}, {"type":
+    "boolean", "name": "listing_date_2024-09-10", "required": true}, {"type": "boolean",
+    "name": "type_apartment", "required": true}, {"type": "boolean", "name": "type_house",
+    "required": true}, {"type": "boolean", "name": "floors_2", "required": true},
+    {"type": "boolean", "name": "floors_3", "required": true}, {"type": "boolean",
+    "name": "floors_`", "required": true}, {"type": "boolean", "name": "condition_good
+    ", "required": true}, {"type": "boolean", "name": "condition_new", "required":
+    true}, {"type": "boolean", "name": "condition_old", "required": true}, {"type":
+    "boolean", "name": "furnished_half", "required": true}, {"type": "boolean", "name":
+    "furnished_no", "required": true}, {"type": "boolean", "name": "view_east", "required":
+    true}, {"type": "boolean", "name": "view_highway", "required": true}, {"type":
+    "boolean", "name": "view_neighbourhood", "required": true}, {"type": "boolean",
+    "name": "view_north", "required": true}, {"type": "boolean", "name": "view_west",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-04-29 08:06:18.993781'

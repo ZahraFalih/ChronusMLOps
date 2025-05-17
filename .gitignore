@@ -1,18 +1,21 @@
-cat << 'EOF' > .gitignore
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 
-# Virtual env
+# Virtual environment
 mlflow_venv/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# OS
+# OS-specific files
 .DS_Store
 
 # Secrets
 .env
-EOFdata/raw/*.csv
+
+# MLflow experiment tracking
+mlruns/
+mlruns.db
+saved_models/
